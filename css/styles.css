@@ -15,6 +15,29 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 
+li {
+  text-align: left;
+}
+
+.skillList{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.list1{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.list2{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.list3{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 
 :root {
   --bs-blue: #0d6efd;
@@ -73,7 +96,7 @@ body::-webkit-scrollbar {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -86,7 +109,7 @@ body {
   margin: 0;
   font-family: var(--bs-body-font-family);
   /* font-size: var(--bs-body-font-size); */
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
@@ -111,11 +134,12 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Londrina Outline', cursive;
-  color: white !important;
+  font-family: 'Londrina Solid';
+  color: rgb(0, 0, 0) !important;
   /* font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-weight: 1000;
+  font-weight: 500;
   line-height: 1.2;
+  
 }
 
 h1, .h1 {
@@ -123,16 +147,16 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 2.5;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.5rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 4rem !important;
   }
 }
 
@@ -653,6 +677,7 @@ progress {
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
+    
   }
 }
 @media (min-width: 768px) {
@@ -4066,6 +4091,7 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   text-decoration: none;
   white-space: nowrap;
+  fon
 }
 .navbar-nav {
   display: flex;
@@ -7311,7 +7337,7 @@ textarea.form-control-lg {
 }
 
 .mt-0 {
-  margin-top: 0 !important;
+  margin-top: 1rem !important;
 }
 
 .mt-1 {
@@ -7387,7 +7413,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .mb-auto {
@@ -11309,7 +11335,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 2.5rem 0;
 }
 
 .text-white-75 {
@@ -11322,6 +11348,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   border: none;
   border-radius: 10rem;
 }
@@ -11329,7 +11356,7 @@ body {
 hr.divider {
   height: 0.2rem;
   max-width: 15rem;
-  margin: 1.5rem auto;
+  margin: .5rem auto;
   margin-bottom: 2rem;
   background-color: #C9AE5D;
   opacity: 1;
@@ -11357,10 +11384,10 @@ hr.divider-light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #C9AE5D;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #C9AE5D !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11404,7 +11431,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background:  url("../assets/img/background.PNG");
+  background:  url("../assets/img/portfolio/fullsize/desktop.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11413,6 +11440,15 @@ header.masthead {
 header.masthead h1, header.masthead .h1 {
   font-size: 4rem;
 }
+@media (max-width: 576px) {
+  header.masthead {
+    background-image: url("../assets/img/portfolio/fullsize/mobile.JPG") !important;
+    background-size: cover !important;
+    background-position: center;
+
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -11452,7 +11488,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: #C9AE5D;
   transition: opacity 0.25s ease;
   text-align: center;
 }
