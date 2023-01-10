@@ -66,4 +66,4 @@ var font = ['Londrina Solid', 'Nerko One', 'Bangers','Beau Rivage', 'Blaka Hollo
 doc.style.fontFamily = font[i];
 i = (i + 1) % font.length;
 }
-setInterval(change, 1600);
+setInterval(change, 600);

@@ -18,6 +18,13 @@ body::-webkit-scrollbar {
 li {
   text-align: left;
 }
+#openProj:hover {
+  background-color: #005C6D !important;
+  color: white !important;
+}
+#openProj{
+  padding: 1.25rem 2.25rem;
+}
 
 .skillList{
   display: inline-flex;

@@ -77,6 +77,7 @@
                                     <li>CSS</li>
                                     <li>Bootstrap</li>
                                     <li>SQL</li>
+                                    <li>Docker</li>
                                 </ul>
                             </div>
                             <div class="list2">
@@ -96,7 +97,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="btn btn-light btn-xl" href="assets/Resume.pdf" target="_blank">Download Resume</a>
+                        <a class="btn btn-light btn-xl" id="openProj" href="assets/Resume.pdf" target="_blank">Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -108,32 +109,86 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/vectorWrld.png" title="Vector's World!">
-                            <img class="img-fluid" src="assets/img/portfolio/fullsize/vectorWrld.png" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/vexworld.png" title="Vector's World!">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/vectorWrld.png" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-name">Vector's World</div>
                             </div>
                         </a>
+                        <button type="button" id="openProj" class="btn btn-light btn-xl mx-auto d-block" onclick="window.open('https://mitchnguyen1.github.io/VectorsWrld/', '_blank')">Demo</button>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/SongGen.png" title="Random Song Generator">
-                            <img class="img-fluid" src="assets/img/portfolio/fullsize/SongGen.png" alt="..."  />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/moodmixer.png" title="Mood Mixer">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/MoodMixer.png" alt="..."  />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Random Song Generator</div>
+                                <div class="project-name">Mood Mixer</div>
                             </div>
                         </a>
+                        <button type="button" id="openProj" class="btn btn-light btn-xl mx-auto d-block" onclick="window.open('https://github.com/mitchnguyen1/RandomSongGenerator', '_blank')">Demo</button>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/RandomNumGuesser.png" title="Number Guess Game">
-                            <img class="img-fluid" src="assets/img/portfolio/fullsize/RandomNumGuesser.png" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/number.png" title="Number Guessing Game">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/RandomNumGuesser.png" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Number Guess Game</div>
+                              <div class="project-name">Number Guessing Game</div>
                             </div>
-                        </a>
+                          </a>
+                          <button type="button" id="openProj" class="btn btn-light btn-xl mx-auto d-block" onclick="window.open('https://mitchnguyen1.github.io/RandomNumberGuesser/', '_blank')">Demo</button>
                     </div>
                 </div>
             </div>
         </div>
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <div class="text-center">
+                    <h2 class="text-white mt-0">CONTACT</h2>
+                    <hr class="divider divider-light" />
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Content-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="text-muted">Linkedin</div>
+                            <div class="text-white-75">(504) 451-3936</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:mitch01nguyen@gmail.com">mitch01nguyen@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                            <a href="https://www.linkedin.com/in/mitchellnguyen504/" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn logo" width="50" height="50">
+                              </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                            <a href="https://github.com/mitchnguyen1"target="_blank">
+                                <img src="assets/img/github.png" alt="GitHub logo" width="95" height="66" >
+                              </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
         <!-- Footer-->
         <footer class="bg-black py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Mitchell Nguyen</div></div>
