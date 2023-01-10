@@ -15,6 +15,12 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 
+
+body {
+  overflow-x: hidden;
+}
+
+
 li {
   text-align: left;
 }
@@ -686,7 +692,6 @@ progress {
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
-    
   }
 }
 @media (min-width: 768px) {
@@ -2174,11 +2179,26 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .skillList ul {
+    font-size: 0.7rem;
+  }
+  .skillList{
+    
+  }
 }
+
+
 @media (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+  html, body {
+    overflow-x: hidden !important;
+  }
+  .skillList{
+    width: 500px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 991.98px) {
